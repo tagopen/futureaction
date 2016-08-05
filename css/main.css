@@ -327,13 +327,6 @@ h2 {
   display: block;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-    .logo {
-        width: 136.07142857142858px;
-        height: 10.714285714285715px;
-        background-size: 136.07142857142858px 10.714285714285715px
-    }
-}
 h2 {
     font-size: 42px;
     font-weight: 700;

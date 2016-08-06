@@ -43,7 +43,7 @@
   $patterns = array();
   $replacements = array();
   foreach ($post as $key => $value) {
-    $patterns[] = '/\{%' . $key .  '\%}/i'; // varible => {$varible}
+    $patterns[] = '/\{%' . $key .  '\%}/i'; // varible => {%varible%}
     $replacements[] = $value;
   }
 
@@ -80,7 +80,7 @@
   $mail->IsSendmail();
 
   $from = 'no-reply@tagopen.com';
-  $to = "Artem2431@gmail.com";
+  $to = "futureaction_test@mail.ru";
   $mail->SetFrom($from, HOST_NAME);
   $mail->AddAddress($to, 'Name Surname');
 

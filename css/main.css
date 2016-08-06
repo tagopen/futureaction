@@ -278,6 +278,7 @@ body {
 html {
   position: relative;
   min-height: 100%;
+  overflow: auto;
 }
 @media screen and (max-width: 767px) {
     body,
@@ -291,6 +292,10 @@ html {
 ::selection {
     background: #ed403b
 }
+
+.text-center {
+  text-align: center
+}
 #container {
     position: relative;
     display: -webkit-flex;
@@ -299,14 +304,14 @@ html {
     flex-direction: column;
     width: 100%;
     max-width: 1024px;
-    height: inherit;
+    min-height: 100vh;
     margin: auto;
-    padding: 70px 80px 40px 35px;
+    padding: 70px 80px 40px 35px;*/
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: center;
 }
 @media screen and (max-width: 1023px) {
     #container {
@@ -743,6 +748,82 @@ h6.title {
         margin-bottom: -3.4285px
     }
 }
+.contactForm {
+    width: 400px;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .contactForm { 
+        width: 100%;
+    }
+}
+.form-group input.form-control {
+    height: auto;
+}
+.form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    border-color: #ed403b;
+    box-shadow: none;
+    outline: 0;
+}
+.text-danger {
+    color: #e74c3c;
+}
+.btn-xl {
+    width: 100%;
+    color: #fff;
+    background-color: #ed403b;
+    border-color: #ed403b;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 20px 40px;
+    margin-top: 8px;
+}
+.btn.active, .btn:active, .btn:active:focus, .btn:focus {
+  outline: 0;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn, input[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+    font-size: 15px;
+}
+.text-danger {
+    color: #a94442;
+}
 .button,
 .icon.link i {
     font-size: 16px
@@ -841,8 +922,8 @@ h6.title {
     right: 0
 }
 .header-main {
-    margin-bottom: 80px;
-    font-size: 40px;
+    padding-bottom: 40px;
+    font-size: 32px;
 }
 @media (max-width: 767px) {
     .header-main .brief.button {

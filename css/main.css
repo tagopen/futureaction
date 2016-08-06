@@ -332,6 +332,12 @@ h2 {
   display: block;
   text-align: center;
 }
+
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 18px;
+  }
+}
 h2 {
     font-size: 42px;
     font-weight: 700;
@@ -467,7 +473,7 @@ h6.title {
     }
     .col.left .title {
         position: relative;
-        top: -22px;
+        margin: 20px 0;
         white-space: nowrap
     }
 }

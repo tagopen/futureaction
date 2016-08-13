@@ -79,10 +79,10 @@
 
   $mail->IsSendmail();
 
-  $from = 'no-reply@tagopen.com';
-  $to = "futureaction_test@mail.ru";
+  $from = 'no-reply@druzyam.capital';
+  $to = "UtabeGamelu49@inbox.ru";
   $mail->SetFrom($from, HOST_NAME);
-  $mail->AddAddress($to, 'Name Surname');
+  $mail->AddAddress($to, 'Администратору');
 
   $mail->isHTML(false);
 

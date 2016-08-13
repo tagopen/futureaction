@@ -13,7 +13,7 @@ $(function() {
             // get values from FORM
             var phone = $form.find("input[name=phone]").val();
             $.ajax({
-                url: "/futureaction/mail/mail.php",
+                url: "././mail/mail.php",
                 type: "POST",
                 data: {
                     phone: phone
@@ -27,7 +27,7 @@ $(function() {
                     //clear all fields
                     $('.contactForm').trigger("reset");
 
-                    document.location.href='http://tagopen.com/futureaction/index2.html';
+                    document.location.href='presentation.html';
                 },
                 error: function() {
                     // Fail message

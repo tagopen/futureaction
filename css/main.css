@@ -590,16 +590,17 @@ h6.title {
 .number.block {
     position: relative;
     display: inline-block;
-    width: 25%;
-    vertical-align: top
+    vertical-align: top;
+    padding-left: 40px;
+    text-align: center;
+}
+.number.block:first-of-type {
+    padding-left: 0;
 }
 @media screen and (max-width: 767px) {
     .number.block {
         width: 50%
     }
-}
-.number.block:last-child {
-    text-align: right
 }
 @media screen and (max-width: 767px) {
     .number.block:last-child {
@@ -644,9 +645,6 @@ h6.title {
 .number.block:last-child h1 {
     letter-spacing: -.02em
 }
-.number.block:last-child .note {
-    margin-left: -24px
-}
 @media screen and (max-width: 1023px) {
     .number.block:last-child .note {
         margin-left: -17px
@@ -664,21 +662,23 @@ h6.title {
     opacity: 1
 }
 .number.block .note {
+    display: block;
     font-size: 18px;
     font-weight: 300;
     line-height: 1;
-    margin-top: -3px;
-    margin-bottom: -4.4285px;
-    margin-left: -22px;
+    margin-top: 10px;
     padding-bottom: 3px;
     padding-left: 3px;
     -webkit-transform: translateY(-49%);
     -ms-transform: translateY(-49%);
     transform: translateY(-49%);
-    text-align: left;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    text-align: center;
 }
 @media screen and (max-width: 1023px) {
     .number.block .note {
@@ -690,16 +690,13 @@ h6.title {
     }
 }
 .icon.link,
-.number.block .note,
 .number.block h1 {
     display: inline-block;
     transition: .3s ease
 }
 .number.block h1 {
-    font-size: 102px;
-    line-height: 1;
-    margin-top: -15px;
-    margin-bottom: -16.4285px;
+    font-size: 80px;
+    line-height: 1;=
     letter-spacing: -.04em;
     font-weight: 300
 }
@@ -707,8 +704,6 @@ h6.title {
     .number.block h1 {
         font-size: 68px;
         display: inline-block;
-        margin-top: -10px;
-        margin-bottom: -11.4285px
     }
 }
 .number.block h1.sprite-numbers {
